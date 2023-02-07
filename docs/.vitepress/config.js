@@ -22,7 +22,7 @@ export default {
         root: {
           label: 'English',
           lang: 'en',
-          link: '/en/',
+          // link: '/en/',
           themeConfig: {
             nav: nav('en'),
             sidebar: {
