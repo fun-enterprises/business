@@ -287,7 +287,7 @@ Enabling this may require additional configuration on your hosting platform. For
 
 - Type: `Record<string, string>`
 
-Defines custom directory <-> URL mappings. See [Routing: Customize the Mappings](/es/guide/routing#customize-the-mappings) for more details.
+Defines custom directory <-> URL mappings. See [Routing: Customize the Mappings](/guide/routing#customize-the-mappings) for more details.
 
 ```ts
 export default {

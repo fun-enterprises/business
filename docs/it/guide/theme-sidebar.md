@@ -1,6 +1,6 @@
 # Sidebar
 
-The sidebar is the main navigation block for your documentation. You can configure the sidebar menu in [`themeConfig.sidebar`](/it/config/theme-configs#sidebar).
+The sidebar is the main navigation block for your documentation. You can configure the sidebar menu in [`themeConfig.sidebar`](/config/theme-configs#sidebar).
 
 ```js
 export default {

@@ -49,7 +49,7 @@ docs/index.md           -> /
 docs/getting-started.md -> /getting-started.html
 ```
 
-You may also customize the root directory in config file via [`srcDir`](/it/config/app-configs#srcdir) option too. Running `vitepress dev` with the following setting acts same as running `vitepress dev docs` command.
+You may also customize the root directory in config file via [`srcDir`](/config/app-configs#srcdir) option too. Running `vitepress dev` with the following setting acts same as running `vitepress dev docs` command.
 
 ```ts
 export default {
@@ -63,12 +63,12 @@ When adding links in pages, omit extension from the path and use either absolute
 
 ```md
 <!-- Do -->
-[Getting Started](/it/guide/getting-started)
-[Getting Started](../it/guide/getting-started)
+[Getting Started](/guide/getting-started)
+[Getting Started](../guide/getting-started)
 
 <!-- Don't -->
-[Getting Started](/it/guide/getting-started.md)
-[Getting Started](/it/guide/getting-started.html)
+[Getting Started](/guide/getting-started.md)
+[Getting Started](/guide/getting-started.html)
 ```
 
 Learn more about page links and links to assets, such as link to images, at [Asset Handling](asset-handling).
@@ -88,7 +88,7 @@ By default, VitePress generates the final static page files by adding `.html` ex
 └─ index.md
 ```
 
-However, you may also generate a clean URL by setting up [`cleanUrls`](/it/config/app-configs#cleanurls) option.
+However, you may also generate a clean URL by setting up [`cleanUrls`](/config/app-configs#cleanurls) option.
 
 ```ts
 export default {
@@ -120,7 +120,7 @@ packages/pkg-a/src/pkg-a-code.md -> /pkg-a/pkg-a-code.md
 packages/pkg-b/src/pkg-b-code.md -> /pkg-b/pkg-b-code.md
 ```
 
-You may configure the mapping via [`rewrites`](/it/config/app-configs#rewrites) option like this.
+You may configure the mapping via [`rewrites`](/config/app-configs#rewrites) option like this.
 
 ```ts
 export default {
