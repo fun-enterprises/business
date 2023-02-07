@@ -5,14 +5,26 @@ import { SearchPlugin } from "vitepress-plugin-search";
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
-let pluginOptions = {
-  // ...flexSearchIndexOptions,
-  previewLength: 62,
-  buttonLabel: "Search",
-  placeholder: "Search docs",
+let options = {
+  // encode: function (str) {
+  //   return segment.doSegment(str, {simple: true});
+  // },
+  // tokenize: "forward",
+  // previewLength: 62,
+  // buttonLabel: "Search",
+  // placeholder: "Search docs",
 };
 
 export default {
+
+    plugins: [SearchPlugin(options)],
+    // server: {
+    //   fs: {
+    //     // Allow serving files from one level up to the project root
+    //     allow: ["../.."],
+    //   },
+    // },
+    
     title: 'Fun Enterprises',
     description: 'A live business catalog',
     base: '/business',
@@ -130,14 +142,7 @@ export default {
               },
         }
     }
-    ,
-    plugins: [SearchPlugin(pluginOptions)],
-    server: {
-      fs: {
-        // Allow serving files from one level up to the project root
-        allow: ["../.."],
-      },
-    },
+    
 }
 
 function nav(lang) {
@@ -447,3 +452,12 @@ function sidebarConfig(lang) {
     }
 
 }
+
+
+  // ...flexSearchIndexOptions,
+  // lang: 'zh',
+  // encode: str => str.replace(/[\x00-\x7F]/g, "").split(""),
+  // tokenize: "full",
+
+  // encode: false,
+  // tokenize: "full",
