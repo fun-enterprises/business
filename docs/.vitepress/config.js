@@ -1,8 +1,16 @@
 import { createRequire } from 'module'
 import { defineConfig } from 'vitepress'
+import { SearchPlugin } from "vitepress-plugin-search";
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
+
+let pluginOptions = {
+  // ...flexSearchIndexOptions,
+  previewLength: 62,
+  buttonLabel: "Search",
+  placeholder: "Search docs",
+};
 
 export default {
     title: 'Fun Enterprises',
@@ -41,15 +49,16 @@ export default {
               message: 'Released under the MIT License.',
               copyright: 'Copyright © 2019-present Evan You'
             },
-            algolia: {
-              appId: '8J64VVRP8K',
-              apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-              indexName: 'vitepress'
-            },
+            // algolia: {
+            //   appId: '8J64VVRP8K',
+            //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
+            //   indexName: 'vitepress'
+            // },
             carbonAds: {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
-            }
+            },
+            // plugins: [SearchPlugin(pluginOptions)],
           },
         },
         es: {
@@ -74,11 +83,12 @@ export default {
               message: 'Released under the MIT License.',
               copyright: 'Copyright © 2019-present Evan You'
             },
-            algolia: {
-              appId: '8J64VVRP8K',
-              apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-              indexName: 'vitepress'
-            },
+            // algolia: {
+            //   appId: '8J64VVRP8K',
+            //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
+            //   indexName: 'vitepress'
+            // },
+            // plugins: [SearchPlugin(pluginOptions)],
             carbonAds: {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
@@ -107,11 +117,12 @@ export default {
                   message: 'Released under the MIT License.',
                   copyright: 'Copyright © 2019-present Evan You'
                 },
-                algolia: {
-                  appId: '8J64VVRP8K',
-                  apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-                  indexName: 'vitepress'
-                },
+                // algolia: {
+                //   appId: '8J64VVRP8K',
+                //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
+                //   indexName: 'vitepress'
+                // },
+                // plugins: [SearchPlugin(pluginOptions)],
                 carbonAds: {
                   code: 'CEBDT27Y',
                   placement: 'vuejsorg'
@@ -119,7 +130,14 @@ export default {
               },
         }
     }
-    
+    ,
+    plugins: [SearchPlugin(pluginOptions)],
+    server: {
+      fs: {
+        // Allow serving files from one level up to the project root
+        allow: ["../.."],
+      },
+    },
 }
 
 function nav(lang) {
@@ -202,7 +220,7 @@ function nav(lang) {
 
   }
   
-  function sidebarGuide(lang) {
+function sidebarGuide(lang) {
     if (lang=='it'){
         return [
             {
@@ -385,9 +403,9 @@ function nav(lang) {
           ]
         
     }
-  }
+}
   
-  function sidebarConfig(lang) {
+function sidebarConfig(lang) {
     if (lang=='it'){
         return [
             {
@@ -428,5 +446,4 @@ function nav(lang) {
           ]
     }
 
-  }
-  
+}
