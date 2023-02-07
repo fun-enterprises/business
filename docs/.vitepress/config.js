@@ -16,7 +16,7 @@ export default {
         level: [0, 0]
       }
     },
-    // lang: 'en-US',
+    lang: 'en-US',
     i18nRouting: true,
     locales: {
         root: {
