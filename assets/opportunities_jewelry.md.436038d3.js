@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./app.3189fbf6.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/jewelry.md","lastUpdated":1675813750000}'),a={name:"opportunities/jewelry.md"};function o(s,n,p,c,i,d){return t(),r("div")}const m=e(a,[["render",o]]);export{l as __pageData,m as default};
