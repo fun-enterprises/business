@@ -17,6 +17,7 @@ export default {
       }
     },
     lang: 'en-US',
+    ignoreDeadLinks: true,
     i18nRouting: true,
     locales: {
         root: {
