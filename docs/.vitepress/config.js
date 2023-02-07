@@ -4,114 +4,80 @@ import { defineConfig } from 'vitepress'
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
-
-
 export default {
-
     title: 'Fun Enterprises',
     description: 'A live business catalog',
-
-
     base: '/business',
-
     lastUpdated: true,
     cleanUrls: true,
-
     head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
-
     markdown: {
       headers: {
         level: [0, 0]
       }
     },
-  
-
-
     // lang: 'en-US',
     i18nRouting: true,
-
     locales: {
         root: {
           label: 'English',
           lang: 'en',
           link: '/en/',
-
           themeConfig: {
             nav: nav('en'),
-        
             sidebar: {
               '/en/guide/': sidebarGuide('en'),
               '/en/config/': sidebarConfig('en')
             },
-        
             editLink: {
               pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
               text: 'Edit this page on GitHub'
             },
-        
             socialLinks: [
               { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
             ],
-        
             footer: {
               message: 'Released under the MIT License.',
               copyright: 'Copyright © 2019-present Evan You'
             },
-        
             algolia: {
               appId: '8J64VVRP8K',
               apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
               indexName: 'vitepress'
             },
-        
             carbonAds: {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
             }
           },
-
         },
-        // en: {
-        //     label: 'English',
-        //     lang: 'en', // optional, will be added  as `lang` attribute on `html` tag
-        //     link: '/en/' // default /es/ -- shows on navbar translations menu, can be external
-      
-        //     // other locale specific properties...
-        //   },
         es: {
           label: 'Español',
           lang: 'es', // optional, will be added  as `lang` attribute on `html` tag
           link: '/es/', // default /es/ -- shows on navbar translations menu, can be external
-    
           // other locale specific properties...
           themeConfig: {
             nav: nav('es'),
-        
             sidebar: {
               '/es/guide/': sidebarGuide('es'),
               '/es/config/': sidebarConfig('es')
             },
-        
             editLink: {
               pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
               text: 'Edit this page on GitHub'
             },
-        
             socialLinks: [
               { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
             ],
-        
             footer: {
               message: 'Released under the MIT License.',
               copyright: 'Copyright © 2019-present Evan You'
             },
-        
             algolia: {
               appId: '8J64VVRP8K',
               apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
               indexName: 'vitepress'
             },
-        
             carbonAds: {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
@@ -119,49 +85,41 @@ export default {
           },
         },
         it: {
-            label: 'Italian',
+            label: 'Italiano',
             lang: 'it', // optional, will be added  as `lang` attribute on `html` tag
             link: '/it/', // default /es/ -- shows on navbar translations menu, can be external
             // other locale specific properties...
             themeConfig: {
                 nav: nav('it'),
-            
                 sidebar: {
                   '/it/guide/': sidebarGuide('it'),
                   '/it/config/': sidebarConfig('it')
                 },
-            
                 editLink: {
                   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
                   text: 'Edit this page on GitHub'
                 },
-            
                 socialLinks: [
                   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
                 ],
-            
                 footer: {
                   message: 'Released under the MIT License.',
                   copyright: 'Copyright © 2019-present Evan You'
                 },
-            
                 algolia: {
                   appId: '8J64VVRP8K',
                   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
                   indexName: 'vitepress'
                 },
-            
                 carbonAds: {
                   code: 'CEBDT27Y',
                   placement: 'vuejsorg'
                 }
               },
-          }
-      }
-
+        }
+    }
     
 }
-
 
 function nav(lang) {
     if (lang=='it'){
