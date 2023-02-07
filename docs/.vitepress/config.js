@@ -47,8 +47,12 @@ export default {
           themeConfig: {
             nav: nav(''),
             sidebar: {
-              '/guide/': sidebarGuide(''),
-              '/config/': sidebarConfig('')
+              '/opportunities/': sidebarGuide(''),
+              // '/config/': sidebarConfig(''),
+
+              '/structure/': sidebarStructure(''),
+              '/principles/': sidebarPrinciples(''),
+              '/team/': sidebarTeam(''),
             },
             editLink: {
               pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
@@ -81,8 +85,12 @@ export default {
           themeConfig: {
             nav: nav('es'),
             sidebar: {
-              '/es/guide/': sidebarGuide('es'),
-              '/es/config/': sidebarConfig('es')
+              '/es/opportunities/': sidebarGuide('es'),
+              // '/es/config/': sidebarConfig('es'),
+
+              '/structure/': sidebarStructure('es'),
+              '/principles/': sidebarPrinciples('es'),
+              '/team/': sidebarTeam('es'),
             },
             editLink: {
               pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
@@ -115,8 +123,12 @@ export default {
             themeConfig: {
                 nav: nav('it'),
                 sidebar: {
-                  '/it/guide/': sidebarGuide('it'),
-                  '/it/config/': sidebarConfig('it')
+                  '/it/opportunities/': sidebarGuide('it'),
+                  // '/it/config/': sidebarConfig('it'),
+
+                  '/structure/': sidebarStructure('it'),
+                  '/principles/': sidebarPrinciples('it'),
+                  '/team/': sidebarTeam('it'),
                 },
                 editLink: {
                   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
@@ -148,78 +160,74 @@ export default {
 function nav(lang) {
     if (lang=='it'){
         return [
-            { text: 'Guide', link: '/it/guide/what-is-vitepress', activeMatch: '/it/guide/' },
-            { text: 'Configs', link: '/it/config/introduction', activeMatch: '/it/config/' },
-            {
-              text: pkg.version,
-              items: [
-                {
-                  text: 'Changelog',
-                  link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
-                },
-                {
-                  text: 'Contributing',
-                  link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-                }
-              ]
-            }
+            { text: 'Opportunities', link: '/it/opportunities/getting-started', activeMatch: '/it/opportunities/' },
+            // { text: 'Configs', link: '/it/config/introduction', activeMatch: '/it/config/' },
+            { text: 'Structure', link: '/it/structure/introduction', activeMatch: '/it/structure/' },
+            { text: 'Principles', link: '/it/principles/introduction', activeMatch: '/it/principles/' },
+            { text: 'Team', link: '/it/team/introduction', activeMatch: '/it/team/' },
+            // {
+            //   text: pkg.version,
+            //   items: [
+            //     {
+            //       text: 'Changelog',
+            //       link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+            //     },
+            //     {
+            //       text: 'Contributing',
+            //       link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
+            //     }
+            //   ]
+            // }
           ]
     }
     if (lang=='es'){
         return [
-            { text: 'Guide', link: '/es/guide/what-is-vitepress', activeMatch: '/es/guide/' },
-            { text: 'Configs', link: '/es/config/introduction', activeMatch: '/es/config/' },
-            {
-              text: pkg.version,
-              items: [
-                {
-                  text: 'Changelog',
-                  link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
-                },
-                {
-                  text: 'Contributing',
-                  link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-                }
-              ]
-            }
+            { text: 'Opportunities', link: '/es/opportunities/getting-started', activeMatch: '/es/opportunities/' },
+            // { text: 'Configs', link: '/es/config/introduction', activeMatch: '/es/config/' },
+
+            { text: 'Structure', link: '/es/structure/introduction', activeMatch: '/es/structure/' },
+            { text: 'Principles', link: '/es/principles/introduction', activeMatch: '/es/principles/' },
+            { text: 'Team', link: '/es/team/introduction', activeMatch: '/es/team/' },
+
+            // {
+            //   text: pkg.version,
+            //   items: [
+            //     {
+            //       text: 'Changelog',
+            //       link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+            //     },
+            //     {
+            //       text: 'Contributing',
+            //       link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
+            //     }
+            //   ]
+            // }
           ]
     }
-    // if (lang=='en'){
-    //     return [
-    //         { text: 'Guide', link: '/en/guide/what-is-vitepress', activeMatch: '/en/guide/' },
-    //         { text: 'Configs', link: '/en/config/introduction', activeMatch: '/en/config/' },
-    //         {
-    //           text: pkg.version,
-    //           items: [
-    //             {
-    //               text: 'Changelog',
-    //               link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
-    //             },
-    //             {
-    //               text: 'Contributing',
-    //               link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-    //             }
-    //           ]
-    //         }
-    //       ]
-    // }
     if (lang==''){
       return [
-          { text: 'Guide', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
-          { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
-          {
-            text: pkg.version,
-            items: [
-              {
-                text: 'Changelog',
-                link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
-              },
-              {
-                text: 'Contributing',
-                link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-              }
-            ]
-          }
+          { text: 'Opportunities', link: '/opportunities/getting-started', activeMatch: '/opportunities/' },
+          // { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
+
+
+          { text: 'Structure', link: '/structure/introduction', activeMatch: '/structure/' },
+          { text: 'Principles', link: '/principles/introduction', activeMatch: '/principles/' },
+          { text: 'Team', link: '/team/introduction', activeMatch: '/team/' },
+
+
+          // {
+          //   text: pkg.version,
+          //   items: [
+          //     {
+          //       text: 'Changelog',
+          //       link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+          //     },
+          //     {
+          //       text: 'Contributing',
+          //       link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
+          //     }
+          //   ]
+          // }
         ]
   }
 
@@ -228,59 +236,74 @@ function nav(lang) {
 function sidebarGuide(lang) {
     if (lang=='it'){
         return [
-            {
-              text: 'Introduction',
-              collapsed: false,
+          {
+            text: 'Introduction',
+            collapsed: false,
+            items: [
+              { text: 'Getting Started', link: '/it/opportunities/getting-started' },
+            ]
+          },
+          {
+              text: 'Real State',
+              collapsed: true,
               items: [
-                { text: 'What is VitePress?', link: '/it/guide/what-is-vitepress' },
-                { text: 'Getting Started', link: '/it/guide/getting-started' },
-                { text: 'Configuration', link: '/it/guide/configuration' },
-                { text: 'Routing', link: '/it/guide/routing' },
-                { text: 'Deploying', link: '/it/guide/deploying' },
-                { text: 'Internationalization', link: '/it/guide/i18n' }
+                { text: 'Airbnb Rental', link: '/it/opportunities/airbnb-rental' },
+                { text: 'House, Flat Rental', link: '/it/opportunities/house-flat-rental' },
+                { text: 'Commercial Rental', link: '/it/opportunities/commercial-rental' },
+                // { text: 'What is VitePress?', link: '/it/opportunities/what-is-vitepress' },
+                // { text: 'Getting Started', link: '/it/opportunities/getting-started' },
+                // { text: 'Configuration', link: '/it/opportunities/configuration' },
+                // { text: 'Routing', link: '/it/opportunities/routing' },
+                // { text: 'Deploying', link: '/it/opportunities/deploying' },
+                // { text: 'Internationalization', link: '/it/opportunities/i18n' }
               ]
             },
             {
-              text: 'Writing',
-              collapsed: false,
+              text: 'Retail & eCommerce',
+              collapsed: true,
               items: [
-                { text: 'Markdown', link: '/it/guide/markdown' },
-                { text: 'Asset Handling', link: '/it/guide/asset-handling' },
-                { text: 'Frontmatter', link: '/it/guide/frontmatter' },
-                { text: 'Using Vue in Markdown', link: '/it/guide/using-vue' },
-                { text: 'API Reference', link: '/it/guide/api' }
+                { text: 'Breverages', link: '/it/opportunities/breverages' },
+                { text: 'Food', link: '/it/opportunities/food' },
+                { text: 'Health, Wellness, Fitness', link: '/it/opportunities/health-wellness-and-fitness' },
+                { text: 'Clothes', link: '/it/opportunities/clothes' },
+                { text: 'Art', link: '/it/opportunities/art' },
+                { text: 'Music Instruments', link: '/it/opportunities/music-instruments' },
+                { text: 'Machines & Gadgets`', link: '/it/opportunities/machines' },
+                { text: 'Games', link: '/it/opportunities/games' },
+                { text: 'Outdoor Recreation Tools', link: '/it/opportunities/outdoor-recreation-tools' },
+                // { text: 'Weapons', link: '/it/opportunities/weapons' },
+                { text: 'Jewelry', link: '/it/opportunities/jewelry' },
+                { text: 'Education', link: '/it/opportunities/education' }
               ]
             },
             {
-              text: 'Theme',
-              collapsed: false,
+              text: 'IT Services & Products',
+              collapsed: true,
               items: [
-                { text: 'Introduction', link: '/it/guide/theme-introduction' },
-                { text: 'Nav', link: '/it/guide/theme-nav' },
-                { text: 'Sidebar', link: '/it/guide/theme-sidebar' },
-                { text: 'Prev Next Link', link: '/it/guide/theme-prev-next-link' },
-                { text: 'Edit Link', link: '/it/guide/theme-edit-link' },
-                { text: 'Last Updated', link: '/it/guide/theme-last-updated' },
-                { text: 'Layout', link: '/it/guide/theme-layout' },
-                { text: 'Home Page', link: '/it/guide/theme-home-page' },
-                { text: 'Team Page', link: '/it/guide/theme-team-page' },
-                { text: 'Badge', link: '/it/guide/theme-badge' },
-                { text: 'Footer', link: '/it/guide/theme-footer' },
-                { text: 'Search', link: '/it/guide/theme-search' },
-                { text: 'Carbon Ads', link: '/it/guide/theme-carbon-ads' }
+                { text: 'Software As A Service', link: '/it/opportunities/software-as-a-service.md' },
+                { text: 'Video Games', link: '/it/opportunities/video-games.md' },
+                { text: 'Dating Apps', link: '/it/opportunities/dating-apps.md' },
+                { text: 'Health Care Apps', link: '/it/opportunities/health-care-apps.md' },
+                { text: 'Infographics', link: '/it/opportunities/infographics.md' }
               ]
             },
             {
-              text: 'Migrations',
-              collapsed: false,
+              text: 'Multimedia Production',
+              collapsed: true,
+              items: [
+                { text: 'Art', link: '/it/opportunities/art.md'},
+                { text: 'Education', link: '/it/opportunities/education.md'},
+                { text: 'Entertainment', link: '/it/opportunities/entertainment.md'},
+                { text: 'News & Journalism', link: '/it/opportunities/news-and-journalism.md'},
+              ]
+            },
+            {
+              text: 'Event Organization',
+              collapsed: true,
               items: [
                 {
-                  text: 'Migration from VuePress',
-                  link: '/it/guide/migration-from-vuepress'
-                },
-                {
-                  text: 'Migration from VitePress 0.x',
-                  link: '/it/guide/migration-from-vitepress-0'
+                  text: 'Live Music Festival',
+                  link: '/it/opportunities/live-music-festival'
                 }
               ]
             }
@@ -290,57 +313,66 @@ function sidebarGuide(lang) {
         return [
             {
               text: 'Introduction',
-              collapsed: false,
+              collapsed: true,
               items: [
-                { text: 'What is VitePress?', link: '/es/guide/what-is-vitepress' },
-                { text: 'Getting Started', link: '/es/guide/getting-started' },
-                { text: 'Configuration', link: '/es/guide/configuration' },
-                { text: 'Routing', link: '/es/guide/routing' },
-                { text: 'Deploying', link: '/es/guide/deploying' },
-                { text: 'Internationalization', link: '/es/guide/i18n' }
+                { text: 'Getting Started', link: '/es/opportunities/getting-started' },
               ]
             },
             {
-              text: 'Writing',
-              collapsed: false,
+              text: 'Real State',
+              collapsed: true,
               items: [
-                { text: 'Markdown', link: '/es/guide/markdown' },
-                { text: 'Asset Handling', link: '/es/guide/asset-handling' },
-                { text: 'Frontmatter', link: '/es/guide/frontmatter' },
-                { text: 'Using Vue in Markdown', link: '/es/guide/using-vue' },
-                { text: 'API Reference', link: '/es/guide/api' }
+                { text: 'Airbnb Rental', link: '/es/opportunities/airbnb-rental' },
+                { text: 'House, Flat Rental', link: '/es/opportunities/house-flat-rental' },
+                { text: 'Commercial Rental', link: '/es/opportunities/commercial-rental' },
               ]
             },
             {
-              text: 'Theme',
-              collapsed: false,
+              text: 'Retail & eCommerce',
+              collapsed: true,
               items: [
-                { text: 'Introduction', link: '/es/guide/theme-introduction' },
-                { text: 'Nav', link: '/es/guide/theme-nav' },
-                { text: 'Sidebar', link: '/es/guide/theme-sidebar' },
-                { text: 'Prev Next Link', link: '/es/guide/theme-prev-next-link' },
-                { text: 'Edit Link', link: '/es/guide/theme-edit-link' },
-                { text: 'Last Updated', link: '/es/guide/theme-last-updated' },
-                { text: 'Layout', link: '/es/guide/theme-layout' },
-                { text: 'Home Page', link: '/es/guide/theme-home-page' },
-                { text: 'Team Page', link: '/es/guide/theme-team-page' },
-                { text: 'Badge', link: '/es/guide/theme-badge' },
-                { text: 'Footer', link: '/es/guide/theme-footer' },
-                { text: 'Search', link: '/es/guide/theme-search' },
-                { text: 'Carbon Ads', link: '/es/guide/theme-carbon-ads' }
+                { text: 'Breverages', link: '/es/opportunities/breverages' },
+                { text: 'Food', link: '/es/opportunities/food' },
+                { text: 'Health, Wellness, Fitness', link: '/es/opportunities/health-wellness-and-fitness' },
+                { text: 'Clothes', link: '/es/opportunities/clothes' },
+                { text: 'Art', link: '/es/opportunities/art' },
+                { text: 'Music Instruments', link: '/es/opportunities/music-instruments' },
+                { text: 'Machines & Gadgets', link: '/es/opportunities/machines' },
+                { text: 'Games', link: '/es/opportunities/games' },
+                { text: 'Outdoor Recreation Tools', link: '/es/opportunities/outdoor-recreation-tools' },
+                // { text: 'Weapons', link: '/es/opportunities/weapons' },
+                { text: 'Jewelry', link: '/es/opportunities/jewelry' },
+                { text: 'Education', link: '/es/opportunities/education' }
               ]
             },
             {
-              text: 'Migrations',
-              collapsed: false,
+              text: 'IT Services & Products',
+              collapsed: true,
+              items: [
+                { text: 'Software As A Service', link: '/es/opportunities/software-as-a-service.md' },
+                { text: 'Video Games', link: '/es/opportunities/video-games.md' },
+                { text: 'Dating Apps', link: '/es/opportunities/dating-apps.md' },
+                { text: 'Health Care Apps', link: '/es/opportunities/health-care-apps.md' },
+                { text: 'Infographics', link: '/es/opportunities/infographics.md' }
+              ]
+            },
+            {
+              text: 'Multimedia Production',
+              collapsed: true,
+              items: [
+                { text: 'Art', link: '/es/opportunities/art.md'},
+                { text: 'Education', link: '/es/opportunities/education.md'},
+                { text: 'Entertainment', link: '/es/opportunities/entertainment.md'},
+                { text: 'News & Journalism', link: '/es/opportunities/news-and-journalism.md'},
+              ]
+            },
+            {
+              text: 'Event Organization',
+              collapsed: true,
               items: [
                 {
-                  text: 'Migration from VuePress',
-                  link: '/es/guide/migration-from-vuepress'
-                },
-                {
-                  text: 'Migration from VitePress 0.x',
-                  link: '/es/guide/migration-from-vitepress-0'
+                  text: 'Live Music Festival',
+                  link: '/es/opportunities/live-music-festival'
                 }
               ]
             }
@@ -353,55 +385,77 @@ function sidebarGuide(lang) {
               text: 'Introduction',
               collapsed: false,
               items: [
-                { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
-                { text: 'Getting Started', link: '/guide/getting-started' },
-                { text: 'Configuration', link: '/guide/configuration' },
-                { text: 'Routing', link: '/guide/routing' },
-                { text: 'Deploying', link: '/guide/deploying' },
-                { text: 'Internationalization', link: '/guide/i18n' }
+                { text: 'Getting Started', link: '/opportunities/getting-started' },
               ]
             },
             {
-              text: 'Writing',
-              collapsed: false,
+              text: 'Real State',
+              collapsed: true,
               items: [
-                { text: 'Markdown', link: '/guide/markdown' },
-                { text: 'Asset Handling', link: '/guide/asset-handling' },
-                { text: 'Frontmatter', link: '/guide/frontmatter' },
-                { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
-                { text: 'API Reference', link: '/guide/api' }
+                { text: 'Airbnb Rental', link: '/opportunities/airbnb-rental' },
+                { text: 'House, Flat Rental', link: '/opportunities/house-flat-rental' },
+                { text: 'Commercial Rental', link: '/opportunities/commercial-rental' },
+                // { text: 'Configuration', link: '/opportunities/configuration' },
+                // { text: 'Routing', link: '/opportunities/routing' },
+                // { text: 'Deploying', link: '/opportunities/deploying' },
+                // { text: 'Internationalization', link: '/opportunities/i18n' }
               ]
             },
             {
-              text: 'Theme',
-              collapsed: false,
+              text: 'Retail & eCommerce',
+              collapsed: true,
               items: [
-                { text: 'Introduction', link: '/guide/theme-introduction' },
-                { text: 'Nav', link: '/guide/theme-nav' },
-                { text: 'Sidebar', link: '/guide/theme-sidebar' },
-                { text: 'Prev Next Link', link: '/guide/theme-prev-next-link' },
-                { text: 'Edit Link', link: '/guide/theme-edit-link' },
-                { text: 'Last Updated', link: '/guide/theme-last-updated' },
-                { text: 'Layout', link: '/guide/theme-layout' },
-                { text: 'Home Page', link: '/guide/theme-home-page' },
-                { text: 'Team Page', link: '/guide/theme-team-page' },
-                { text: 'Badge', link: '/guide/theme-badge' },
-                { text: 'Footer', link: '/guide/theme-footer' },
-                { text: 'Search', link: '/guide/theme-search' },
-                { text: 'Carbon Ads', link: '/guide/theme-carbon-ads' }
+                { text: 'Breverages', link: '/opportunities/breverages' },
+                { text: 'Food', link: '/opportunities/food' },
+                { text: 'Health, Wellness, Fitness', link: '/opportunities/health-wellness-and-fitness' },
+                { text: 'Clothes', link: '/opportunities/clothes' },
+                { text: 'Art', link: '/opportunities/art' },
+                { text: 'Music Instruments', link: '/opportunities/music-instruments' },
+                { text: 'Machines & Gadgets', link: '/opportunities/machines' },
+                { text: 'Games', link: '/opportunities/games' },
+                { text: 'Outdoor Recreation Tools', link: '/opportunities/outdoor-recreation-tools' },
+                // { text: 'Weapons', link: '/opportunities/weapons' },
+                { text: 'Jewelry', link: '/opportunities/jewelry' },
+                { text: 'Education', link: '/opportunities/education' }
               ]
             },
             {
-              text: 'Migrations',
-              collapsed: false,
+              text: 'IT Services & Products',
+              collapsed: true,
+              items: [
+                { text: 'Software As A Service', link: '/opportunities/software-as-a-service.md' },
+                { text: 'Video Games', link: '/opportunities/video-games.md' },
+                { text: 'Dating Apps', link: '/opportunities/dating-apps.md' },
+                { text: 'Health Care Apps', link: '/opportunities/health-care-apps.md' },
+                { text: 'Infographics', link: '/opportunities/infographics.md' }
+
+                // { text: 'Last Updated', link: '/opportunities/theme-last-updated' },
+                // { text: 'Layout', link: '/opportunities/theme-layout' },
+                // { text: 'Home Page', link: '/opportunities/theme-home-page' },
+                // { text: 'Team Page', link: '/opportunities/theme-team-page' },
+                // { text: 'Badge', link: '/opportunities/theme-badge' },
+                // { text: 'Footer', link: '/opportunities/theme-footer' },
+                // { text: 'Search', link: '/opportunities/theme-search' },
+                // { text: 'Carbon Ads', link: '/opportunities/theme-carbon-ads' }
+              ]
+            },
+            {
+              text: 'Multimedia Production',
+              collapsed: true,
+              items: [
+                { text: 'Art', link: '/opportunities/art.md'},
+                { text: 'Education', link: '/opportunities/education.md'},
+                { text: 'Entertainment', link: '/opportunities/entertainment.md'},
+                { text: 'News & Journalism', link: '/opportunities/news-and-journalism.md'},
+              ]
+            },
+            {
+              text: 'Event Organization',
+              collapsed: true,
               items: [
                 {
-                  text: 'Migration from VuePress',
-                  link: '/guide/migration-from-vuepress'
-                },
-                {
-                  text: 'Migration from VitePress 0.x',
-                  link: '/guide/migration-from-vitepress-0'
+                  text: 'Live Music Festival',
+                  link: '/opportunities/live-music-festival'
                 }
               ]
             }
@@ -450,10 +504,131 @@ function sidebarConfig(lang) {
             }
           ]
     }
-
 }
 
-
+function sidebarStructure(lang){
+    if (lang=='it'){
+      return [
+          {
+            text: 'Business Structure',
+            items: [
+              { text: 'Introduction', link: '/it/structure/introduction' },
+              // { text: 'App Configs', link: '/it/structure/app-configs' },
+              // { text: 'Theme Configs', link: '/it/structure/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/it/structure/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang=='es'){
+      return [
+          {
+            text: 'Business Structure',
+            items: [
+              { text: 'Introduction', link: '/es/structure/introduction' },
+              // { text: 'App Configs', link: '/es/structure/app-configs' },
+              // { text: 'Theme Configs', link: '/es/structure/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/es/structure/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang==''){
+      return [
+          {
+            text: 'Business Structure',
+            items: [
+              { text: 'Introduction', link: '/structure/introduction' },
+              // { text: 'App Configs', link: '/structure/app-configs' },
+              // { text: 'Theme Configs', link: '/structure/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/structure/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+}
+function sidebarPrinciples(lang){
+    if (lang=='it'){
+      return [
+          {
+            text: 'Guiding Principles',
+            items: [
+              { text: 'Introduction', link: '/it/principles/introduction' },
+              // { text: 'App Configs', link: '/it/principles/app-configs' },
+              // { text: 'Theme Configs', link: '/it/principles/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/it/principles/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang=='es'){
+      return [
+          {
+            text: 'Guiding Principles',
+            items: [
+              { text: 'Introduction', link: '/es/principles/introduction' },
+              // { text: 'App Configs', link: '/es/principles/app-configs' },
+              // { text: 'Theme Configs', link: '/es/principles/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/es/principles/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang==''){
+      return [
+          {
+            text: 'Guiding Principles',
+            items: [
+              { text: 'Introduction', link: '/principles/introduction' },
+              // { text: 'App Configs', link: '/principles/app-configs' },
+              // { text: 'Theme Configs', link: '/principles/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/principles/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+}
+function sidebarTeam(lang){
+    if (lang=='it'){
+      return [
+          {
+            text: 'Team',
+            items: [
+              { text: 'Introduction', link: '/it/team/introduction' },
+              // { text: 'App Configs', link: '/it/team/app-configs' },
+              // { text: 'Theme Configs', link: '/it/team/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/it/team/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang=='es'){
+      return [
+          {
+            text: 'Equipo',
+            items: [
+              { text: 'Introduction', link: '/es/team/introduction' },
+              // { text: 'App Configs', link: '/es/team/app-configs' },
+              // { text: 'Theme Configs', link: '/es/team/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/es/team/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+  if (lang==''){
+      return [
+          {
+            text: 'Team',
+            items: [
+              { text: 'Introduction', link: '/team/introduction' },
+              // { text: 'App Configs', link: '/team/app-configs' },
+              // { text: 'Theme Configs', link: '/team/theme-configs' },
+              // { text: 'Frontmatter Configs', link: '/team/frontmatter-configs' }
+            ]
+          }
+        ]
+  }
+}
   // ...flexSearchIndexOptions,
   // lang: 'zh',
   // encode: str => str.replace(/[\x00-\x7F]/g, "").split(""),
