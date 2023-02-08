@@ -222,7 +222,7 @@ function sidebarGuide(lang) {
             ]
           },
           {
-              text: 'Real State',
+              text: 'Real Estate',
               collapsed: true,
               items: [
                 { text: 'Airbnb Rental', link: '/it/opportunities/airbnb-rental' },
@@ -237,21 +237,41 @@ function sidebarGuide(lang) {
               ]
             },
             {
-              text: 'Retail & eCommerce',
+              text: 'Agriculture & Livestock',
               collapsed: true,
               items: [
-                { text: 'Breverages', link: '/it/opportunities/breverages' },
-                { text: 'Food', link: '/it/opportunities/food' },
-                { text: 'Health, Wellness, Fitness', link: '/it/opportunities/health-wellness-and-fitness' },
-                { text: 'Clothes', link: '/it/opportunities/clothes' },
-                { text: 'Art', link: '/it/opportunities/art' },
-                { text: 'Music Instruments', link: '/it/opportunities/music-instruments' },
-                { text: 'Machines & Gadgets`', link: '/it/opportunities/machines' },
-                { text: 'Games', link: '/it/opportunities/games' },
-                { text: 'Outdoor Recreation Tools', link: '/it/opportunities/outdoor-recreation-tools' },
+                {
+                  text: 'Agriculture',
+                  link: '/it/opportunities/agriculture'
+                }
+                ,
+                {
+                  text: 'Livestock',
+                  link: '/it/opportunities/livestock'
+                }
+                ,
+              ]
+            },
+            {
+              text: 'Retail, E-tail & eCommerce',
+              collapsed: true,
+              items: [
+                { text: 'Products', link: '/it/opportunities/products' },
+                { text: 'Sales Channels', link: '/it/opportunities/sales-channels' },
+                { text: 'Logistics', link: '/it/opportunities/logistics' },
+                
+                // { text: 'Breverages', link: '/it/opportunities/breverages' },
+                // { text: 'Food', link: '/it/opportunities/food' },
+                // { text: 'Health, Wellness, Fitness', link: '/it/opportunities/health-wellness-and-fitness' },
+                // { text: 'Clothes', link: '/it/opportunities/clothes' },
+                // { text: 'Art', link: '/it/opportunities/art' },
+                // { text: 'Music Instruments', link: '/it/opportunities/music-instruments' },
+                // { text: 'Machines & Gadgets`', link: '/it/opportunities/machines' },
+                // { text: 'Games', link: '/it/opportunities/games' },
+                // { text: 'Outdoor Recreation Tools', link: '/it/opportunities/outdoor-recreation-tools' },
                 // { text: 'Weapons', link: '/it/opportunities/weapons' },
-                { text: 'Jewelry', link: '/it/opportunities/jewelry' },
-                { text: 'Education', link: '/it/opportunities/education' }
+                // { text: 'Jewelry', link: '/it/opportunities/jewelry' },
+                // { text: 'Education', link: '/it/opportunities/education' }
               ]
             },
             {
@@ -260,8 +280,12 @@ function sidebarGuide(lang) {
               items: [
                 { text: 'Software As A Service', link: '/it/opportunities/software-as-a-service.md' },
                 { text: 'Video Games', link: '/it/opportunities/video-games.md' },
-                { text: 'Dating Apps', link: '/it/opportunities/dating-apps.md' },
-                { text: 'Health Care Apps', link: '/it/opportunities/health-care-apps.md' },
+
+                { text: 'Mobile Applications', link: '/opportunities/mobile-applications.md' },
+                { text: 'Web Applications', link: '/opportunities/web-applications.md' },
+
+                // { text: 'Dating Apps', link: '/it/opportunities/dating-apps.md' },
+                // { text: 'Health Care Apps', link: '/it/opportunities/health-care-apps.md' },
                 { text: 'Infographics', link: '/it/opportunities/infographics.md' }
               ]
             },
@@ -269,19 +293,64 @@ function sidebarGuide(lang) {
               text: 'Multimedia Production',
               collapsed: true,
               items: [
-                { text: 'Art', link: '/it/opportunities/art.md'},
-                { text: 'Education', link: '/it/opportunities/education.md'},
-                { text: 'Entertainment', link: '/it/opportunities/entertainment.md'},
-                { text: 'News & Journalism', link: '/it/opportunities/news-and-journalism.md'},
+                { text: 'Artistic Content', link: '/it/opportunities/art.md'},
+                { text: 'Educational Content', link: '/it/opportunities/education.md'},
+                { text: 'Entertainment Content', link: '/it/opportunities/entertainment.md'},
+                { text: 'News Show & Journalism', link: '/it/opportunities/news-and-journalism.md'},
+                { text: 'Corporate Content', link: '/it/opportunities/corporate.md'},
               ]
             },
             {
-              text: 'Event Organization',
+              text: 'Event Production',
               collapsed: true,
               items: [
                 {
                   text: 'Live Music Festival',
                   link: '/it/opportunities/live-music-festival'
+                }
+              ]
+            },
+            {
+              text: 'Stocks',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Portfolio Management',
+                  link: '/it/opportunities/portfolio-managment'
+                },
+                {
+                  text: 'Companies With Growth Potential',
+                  link: '/it/opportunities/companies-with-upside-potential'
+                }
+              ]
+            }
+            ,
+            {
+              text: 'Precious Metals',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Gold',
+                  link: '/it/opportunities/gold'
+                },
+                {
+                  text: 'Lithium',
+                  link: '/it/opportunities/lithium'
+                },
+                {
+                  text: 'Zirconium Dioxide',
+                  link: '/it/opportunities/zirconium_dioxide'
+                },
+
+              ]
+            },
+            {
+              text: 'Importing & Exporting',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Global Commerce',
+                  link: '/it/opportunities/global-commerce'
                 }
               ]
             }
@@ -297,7 +366,7 @@ function sidebarGuide(lang) {
               ]
             },
             {
-              text: 'Real State',
+              text: 'Real Estate',
               collapsed: true,
               items: [
                 { text: 'Airbnb Rental', link: '/es/opportunities/airbnb-rental' },
@@ -306,21 +375,41 @@ function sidebarGuide(lang) {
               ]
             },
             {
-              text: 'Retail & eCommerce',
+              text: 'Agriculture & Livestock',
               collapsed: true,
               items: [
-                { text: 'Breverages', link: '/es/opportunities/breverages' },
-                { text: 'Food', link: '/es/opportunities/food' },
-                { text: 'Health, Wellness, Fitness', link: '/es/opportunities/health-wellness-and-fitness' },
-                { text: 'Clothes', link: '/es/opportunities/clothes' },
-                { text: 'Art', link: '/es/opportunities/art' },
-                { text: 'Music Instruments', link: '/es/opportunities/music-instruments' },
-                { text: 'Machines & Gadgets', link: '/es/opportunities/machines' },
-                { text: 'Games', link: '/es/opportunities/games' },
-                { text: 'Outdoor Recreation Tools', link: '/es/opportunities/outdoor-recreation-tools' },
-                // { text: 'Weapons', link: '/es/opportunities/weapons' },
-                { text: 'Jewelry', link: '/es/opportunities/jewelry' },
-                { text: 'Education', link: '/es/opportunities/education' }
+                {
+                  text: 'Agriculture',
+                  link: '/es/opportunities/agriculture'
+                }
+                ,
+                {
+                  text: 'Livestock',
+                  link: '/es/opportunities/livestock'
+                }
+                ,
+              ]
+            },
+            {
+              text: 'Retail, E-tail & eCommerce',
+              collapsed: true,
+              items: [
+                { text: 'Products', link: '/es/opportunities/products' },
+                { text: 'Sales Channels', link: '/es/opportunities/sales-channels' },
+                { text: 'Logistics', link: '/es/opportunities/logistics' },
+
+                // { text: 'Breverages', link: '/es/opportunities/breverages' },
+                // { text: 'Food', link: '/es/opportunities/food' },
+                // { text: 'Health, Wellness, Fitness', link: '/es/opportunities/health-wellness-and-fitness' },
+                // { text: 'Clothes', link: '/es/opportunities/clothes' },
+                // { text: 'Art', link: '/es/opportunities/art' },
+                // { text: 'Music Instruments', link: '/es/opportunities/music-instruments' },
+                // { text: 'Machines & Gadgets', link: '/es/opportunities/machines' },
+                // { text: 'Games', link: '/es/opportunities/games' },
+                // { text: 'Outdoor Recreation Tools', link: '/es/opportunities/outdoor-recreation-tools' },
+                // // { text: 'Weapons', link: '/es/opportunities/weapons' },
+                // { text: 'Jewelry', link: '/es/opportunities/jewelry' },
+                // { text: 'Education', link: '/es/opportunities/education' }
               ]
             },
             {
@@ -329,8 +418,13 @@ function sidebarGuide(lang) {
               items: [
                 { text: 'Software As A Service', link: '/es/opportunities/software-as-a-service.md' },
                 { text: 'Video Games', link: '/es/opportunities/video-games.md' },
-                { text: 'Dating Apps', link: '/es/opportunities/dating-apps.md' },
-                { text: 'Health Care Apps', link: '/es/opportunities/health-care-apps.md' },
+
+                { text: 'Mobile Applications', link: '/es/opportunities/mobile-applications.md' },
+                { text: 'Web Applications', link: '/es/opportunities/web-applications.md' },
+
+                // { text: 'Dating Apps', link: '/es/opportunities/dating-apps.md' },
+                // { text: 'Health Care Apps', link: '/es/opportunities/health-care-apps.md' },
+
                 { text: 'Infographics', link: '/es/opportunities/infographics.md' }
               ]
             },
@@ -338,19 +432,63 @@ function sidebarGuide(lang) {
               text: 'Multimedia Production',
               collapsed: true,
               items: [
-                { text: 'Art', link: '/es/opportunities/art.md'},
-                { text: 'Education', link: '/es/opportunities/education.md'},
-                { text: 'Entertainment', link: '/es/opportunities/entertainment.md'},
-                { text: 'News & Journalism', link: '/es/opportunities/news-and-journalism.md'},
+                { text: 'Artistic Content', link: '/es/opportunities/art.md'},
+                { text: 'Educational Content', link: '/es/opportunities/education.md'},
+                { text: 'Entertainment Content', link: '/es/opportunities/entertainment.md'},
+                { text: 'News Show & Journalism', link: '/es/opportunities/news-and-journalism.md'},
+                { text: 'Corporate Content', link: '/es/opportunities/corporate.md'},
               ]
             },
             {
-              text: 'Event Organization',
+              text: 'Event Production',
               collapsed: true,
               items: [
                 {
                   text: 'Live Music Festival',
                   link: '/es/opportunities/live-music-festival'
+                }
+              ]
+            },
+            {
+              text: 'Stocks',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Portfolio Management',
+                  link: '/es/opportunities/portfolio-managment'
+                },
+                {
+                  text: 'Companies With Growth Potential',
+                  link: '/es/opportunities/companies-with-upside-potential'
+                }
+              ]
+            },
+            {
+              text: 'Precious Metals',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Gold',
+                  link: '/es/opportunities/gold'
+                },
+                {
+                  text: 'Lithium',
+                  link: '/es/opportunities/lithium'
+                },
+                {
+                  text: 'Zirconium Dioxide',
+                  link: '/es/opportunities/zirconium_dioxide'
+                },
+
+              ]
+            },
+            {
+              text: 'Importing & Exporting',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Global Commerce',
+                  link: '/es/opportunities/global-commerce'
                 }
               ]
             }
@@ -367,7 +505,7 @@ function sidebarGuide(lang) {
               ]
             },
             {
-              text: 'Real State',
+              text: 'Real Estate',
               collapsed: true,
               items: [
                 { text: 'Airbnb Rental', link: '/opportunities/airbnb-rental' },
@@ -380,21 +518,41 @@ function sidebarGuide(lang) {
               ]
             },
             {
-              text: 'Retail & eCommerce',
+              text: 'Agriculture & Livestock',
               collapsed: true,
               items: [
-                { text: 'Breverages', link: '/opportunities/breverages' },
-                { text: 'Food', link: '/opportunities/food' },
-                { text: 'Health, Wellness, Fitness', link: '/opportunities/health-wellness-and-fitness' },
-                { text: 'Clothes', link: '/opportunities/clothes' },
-                { text: 'Art', link: '/opportunities/art' },
-                { text: 'Music Instruments', link: '/opportunities/music-instruments' },
-                { text: 'Machines & Gadgets', link: '/opportunities/machines' },
-                { text: 'Games', link: '/opportunities/games' },
-                { text: 'Outdoor Recreation Tools', link: '/opportunities/outdoor-recreation-tools' },
+                {
+                  text: 'Agriculture',
+                  link: '/opportunities/agriculture'
+                }
+                ,
+                {
+                  text: 'Livestock',
+                  link: '/opportunities/livestock'
+                }
+                ,
+              ]
+            },
+            {
+              text: 'Retail, E-tail & eCommerce',
+              collapsed: true,
+              items: [
+                { text: 'Products', link: '/opportunities/products' },
+                { text: 'Sales Channels', link: '/opportunities/sales-channels' },
+                { text: 'Logistics', link: '/opportunities/logistics' },
+
+                // { text: 'Breverages', link: '/opportunities/breverages' },
+                // { text: 'Food', link: '/opportunities/food' },
+                // { text: 'Health, Wellness, Fitness', link: '/opportunities/health-wellness-and-fitness' },
+                // { text: 'Clothes', link: '/opportunities/clothes' },
+                // { text: 'Art', link: '/opportunities/art' },
+                // { text: 'Music Instruments', link: '/opportunities/music-instruments' },
+                // { text: 'Machines & Gadgets', link: '/opportunities/machines' },
+                // { text: 'Games', link: '/opportunities/games' },
+                // { text: 'Outdoor Recreation Tools', link: '/opportunities/outdoor-recreation-tools' },
                 // { text: 'Weapons', link: '/opportunities/weapons' },
-                { text: 'Jewelry', link: '/opportunities/jewelry' },
-                { text: 'Education', link: '/opportunities/education' }
+                // { text: 'Jewelry', link: '/opportunities/jewelry' },
+                // { text: 'Education', link: '/opportunities/education' }
               ]
             },
             {
@@ -403,8 +561,11 @@ function sidebarGuide(lang) {
               items: [
                 { text: 'Software As A Service', link: '/opportunities/software-as-a-service.md' },
                 { text: 'Video Games', link: '/opportunities/video-games.md' },
-                { text: 'Dating Apps', link: '/opportunities/dating-apps.md' },
-                { text: 'Health Care Apps', link: '/opportunities/health-care-apps.md' },
+
+                { text: 'Mobile Applications', link: '/opportunities/mobile-applications.md' },
+                { text: 'Web Applications', link: '/opportunities/web-applications.md' },
+                // { text: 'Dating Apps', link: '/opportunities/dating-apps.md' },
+                // { text: 'Health Care Apps', link: '/opportunities/health-care-apps.md' },
                 { text: 'Infographics', link: '/opportunities/infographics.md' }
 
                 // { text: 'Last Updated', link: '/opportunities/theme-last-updated' },
@@ -421,14 +582,16 @@ function sidebarGuide(lang) {
               text: 'Multimedia Production',
               collapsed: true,
               items: [
-                { text: 'Art', link: '/opportunities/art.md'},
-                { text: 'Education', link: '/opportunities/education.md'},
-                { text: 'Entertainment', link: '/opportunities/entertainment.md'},
-                { text: 'News & Journalism', link: '/opportunities/news-and-journalism.md'},
+                { text: 'Artistic Content', link: '/opportunities/art.md'},
+                { text: 'Educational Content', link: '/opportunities/education.md'},
+                { text: 'Entertainment Content', link: '/opportunities/entertainment.md'},
+                { text: 'News Show & Journalism', link: '/opportunities/news-and-journalism.md'},
+                { text: 'Corporate Content', link: '/opportunities/corporate.md'},
+
               ]
             },
             {
-              text: 'Event Organization',
+              text: 'Event Production',
               collapsed: true,
               items: [
                 {
@@ -436,7 +599,50 @@ function sidebarGuide(lang) {
                   link: '/opportunities/live-music-festival'
                 }
               ]
-            }
+            },
+            {
+              text: 'Stocks',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Portfolio Management',
+                  link: '/opportunities/portfolio-managment'
+                },
+                {
+                  text: 'Companies With Growth Potential',
+                  link: '/opportunities/companies-with-upside-potential'
+                }
+              ]
+            },
+            {
+              text: 'Precious Metals',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Gold',
+                  link: '/opportunities/gold'
+                },
+                {
+                  text: 'Lithium',
+                  link: '/opportunities/lithium'
+                },
+                {
+                  text: 'Zirconium Dioxide',
+                  link: '/opportunities/zirconium_dioxide'
+                },
+
+              ]
+            },
+            {
+              text: 'Importing & Exporting',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Global Commerce',
+                  link: '/opportunities/global-commerce'
+                }
+              ]
+            }     
           ]
         
     }
