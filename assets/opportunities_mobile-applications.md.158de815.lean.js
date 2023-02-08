@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o}from"./app.f35c242e.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/mobile-applications.md","lastUpdated":1675890260000}'),a={name:"opportunities/mobile-applications.md"};function i(p,s,n,r,c,l){return e(),o("div")}const _=t(a,[["render",i]]);export{m as __pageData,_ as default};

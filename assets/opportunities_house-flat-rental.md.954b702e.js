@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.f35c242e.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/house-flat-rental.md","lastUpdated":1675813750000}'),o={name:"opportunities/house-flat-rental.md"};function r(s,n,p,c,i,l){return e(),a("div")}const f=t(o,[["render",r]]);export{_ as __pageData,f as default};

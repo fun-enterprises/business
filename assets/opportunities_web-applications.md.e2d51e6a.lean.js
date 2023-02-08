@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.f35c242e.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/web-applications.md","lastUpdated":1675890260000}'),o={name:"opportunities/web-applications.md"};function p(s,n,r,i,c,d){return e(),a("div")}const m=t(o,[["render",p]]);export{l as __pageData,m as default};

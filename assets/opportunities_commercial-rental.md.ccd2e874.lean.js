@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.6c7b3dba.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/commercial-rental.md","lastUpdated":1675813750000}'),r={name:"opportunities/commercial-rental.md"};function o(c,n,s,i,p,m){return t(),a("div")}const _=e(r,[["render",o]]);export{d as __pageData,_ as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.f35c242e.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/weapons.md","lastUpdated":1675813750000}'),o={name:"opportunities/weapons.md"};function s(n,r,p,c,i,d){return t(),a("div")}const f=e(o,[["render",s]]);export{m as __pageData,f as default};

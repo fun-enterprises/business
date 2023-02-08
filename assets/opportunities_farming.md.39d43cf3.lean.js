@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.f35c242e.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/farming.md","lastUpdated":1675890260000}'),r={name:"opportunities/farming.md"};function o(n,s,i,p,c,d){return e(),a("div")}const f=t(r,[["render",o]]);export{_ as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o}from"./app.f35c242e.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/gold.md","lastUpdated":1675890260000}'),a={name:"opportunities/gold.md"};function r(s,n,p,c,d,i){return e(),o("div")}const m=t(a,[["render",r]]);export{l as __pageData,m as default};

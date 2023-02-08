@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./app.f35c242e.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/global-commerce.md","lastUpdated":1675890260000}'),a={name:"opportunities/global-commerce.md"};function r(c,s,n,p,m,i){return t(),o("div")}const _=e(a,[["render",r]]);export{d as __pageData,_ as default};

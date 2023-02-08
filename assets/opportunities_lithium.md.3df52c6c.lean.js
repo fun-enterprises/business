@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.f35c242e.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/lithium.md","lastUpdated":1675890260000}'),o={name:"opportunities/lithium.md"};function r(i,s,n,p,c,d){return e(),a("div")}const l=t(o,[["render",r]]);export{_ as __pageData,l as default};
