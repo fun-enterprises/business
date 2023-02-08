@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.3189fbf6.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/software-as-a-service.md","lastUpdated":1675813750000}'),s={name:"opportunities/software-as-a-service.md"};function r(o,c,n,i,p,d){return t(),a("div")}const m=e(s,[["render",r]]);export{f as __pageData,m as default};

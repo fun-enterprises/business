@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as o}from"./app.3189fbf6.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/food.md","lastUpdated":1675813750000}'),a={name:"opportunities/food.md"};function r(s,n,p,c,d,i){return e(),o("div")}const m=t(a,[["render",r]]);export{f as __pageData,m as default};

@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.6c7b3dba.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/infographics.md","lastUpdated":1675813750000}'),o={name:"opportunities/infographics.md"};function r(s,n,i,p,c,d){return e(),a("div")}const m=t(o,[["render",r]]);export{f as __pageData,m as default};

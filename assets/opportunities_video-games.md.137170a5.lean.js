@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.6c7b3dba.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/video-games.md","lastUpdated":1675813750000}'),o={name:"opportunities/video-games.md"};function s(r,n,i,p,c,d){return t(),a("div")}const f=e(o,[["render",s]]);export{_ as __pageData,f as default};

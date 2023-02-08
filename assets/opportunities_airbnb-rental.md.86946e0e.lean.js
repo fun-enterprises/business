@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.6c7b3dba.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/airbnb-rental.md","lastUpdated":1675813750000}'),r={name:"opportunities/airbnb-rental.md"};function n(o,s,i,p,c,d){return e(),a("div")}const m=t(r,[["render",n]]);export{l as __pageData,m as default};

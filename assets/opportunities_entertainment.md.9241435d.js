@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as n}from"./app.3189fbf6.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/entertainment.md","lastUpdated":1675813750000}'),a={name:"opportunities/entertainment.md"};function r(o,s,i,p,c,d){return e(),n("div")}const f=t(a,[["render",r]]);export{_ as __pageData,f as default};

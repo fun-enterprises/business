@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a}from"./app.6c7b3dba.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/dating-apps.md","lastUpdated":1675813750000}'),p={name:"opportunities/dating-apps.md"};function s(o,n,r,i,c,d){return e(),a("div")}const f=t(p,[["render",s]]);export{m as __pageData,f as default};

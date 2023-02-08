@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as s}from"./app.3189fbf6.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"opportunities/music-instruments.md","lastUpdated":1675813750000}'),n={name:"opportunities/music-instruments.md"};function r(a,o,c,i,p,m){return e(),s("div")}const _=t(n,[["render",r]]);export{d as __pageData,_ as default};
