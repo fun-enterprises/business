@@ -1,30 +1,11 @@
 import { createRequire } from 'module'
 import { defineConfig } from 'vitepress'
-import { SearchPlugin } from "vitepress-plugin-search";
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
-let options = {
-  // encode: function (str) {
-  //   return segment.doSegment(str, {simple: true});
-  // },
-  // tokenize: "forward",
-  // previewLength: 62,
-  // buttonLabel: "Search",
-  // placeholder: "Search docs",
-};
-
 export default {
 
-    plugins: [SearchPlugin(options)],
-    // server: {
-    //   fs: {
-    //     // Allow serving files from one level up to the project root
-    //     allow: ["../.."],
-    //   },
-    // },
-    
     title: 'Fun Enterprises',
     description: 'A live business catalog',
     base: '/business',
@@ -74,7 +55,6 @@ export default {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
             },
-            // plugins: [SearchPlugin(pluginOptions)],
           },
         },
         es: {
@@ -108,7 +88,6 @@ export default {
             //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
             //   indexName: 'vitepress'
             // },
-            // plugins: [SearchPlugin(pluginOptions)],
             carbonAds: {
               code: 'CEBDT27Y',
               placement: 'vuejsorg'
@@ -146,7 +125,6 @@ export default {
                 //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
                 //   indexName: 'vitepress'
                 // },
-                // plugins: [SearchPlugin(pluginOptions)],
                 carbonAds: {
                   code: 'CEBDT27Y',
                   placement: 'vuejsorg'
